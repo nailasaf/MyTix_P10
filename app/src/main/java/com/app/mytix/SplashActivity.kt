@@ -11,10 +11,8 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // nampilin layout splash
         setContentView(R.layout.activity_splash)
 
-        // delay 2 detik lalu pindah ke MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
